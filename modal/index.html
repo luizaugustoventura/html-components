@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Modal example</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link type="text/css" rel="stylesheet" type="text/css" href="index.css">
+        <link type="text/css" rel="stylesheet" type="text/css" href="modal.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div class="form-container">
+            
+            <form>
+                <div class="welcome-text">
+                    <h1>Welcome!</h1>
+                </div>
+
+                <div class="form-row">
+                    <input type="email" id="email" placeholder="Your email...">
+                </div>
+
+                <div class="form-row">
+                    <input type="password" id="password" placeholder="Your password...">
+                </div>
+
+                <div class="button-container">
+                    <button type="button">Log in</button>
+                </div>
+
+                <div class="pwd-recovery-container">
+                    <a href="#" class="pwd-recovery-link" onclick="openModal();">Forgot your password?</a>
+                </div>
+            </form>
+        </div>
+
+        <div id="modal-fade"> 
+            <div id="modal-content">
+                <div class="modal-header">
+                    <h2>Password recovery</h2>
+
+                    <button type="button" onclick="closeModal();" >
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+
+                <div class="modal-form">
+                    <h3>Fill the fields below and then click "Recover" to recover your password</h3>
+                    
+                    <div class="modal-form-row">
+                        <input type="email" class="modal-input" placeholder="Type your email...">
+                    </div>
+
+                    <div class="modal-form-row">
+                        <input type="number" class="modal-input" placeholder="Type your phone...">
+                    </div>
+                    
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button">Recover</button>
+                </div>
+            </div>  
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>

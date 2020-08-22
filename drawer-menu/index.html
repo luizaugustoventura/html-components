@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawer menu example</title>
+
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+</head>
+<body>
+    <div id="sidemenuContainer">
+        <div id="sidemenu">
+            <ul>
+                 <a href="#"> <li> Homepage </li> </a> 
+                 <a href="#"> <li> Contact us </li> </a> 
+                 <a href="#"> <li> Logout </li> </a> 
+            </ul>
+        </div>
+
+        <div id="fakeContent">
+
+        </div>
+    </div>
+
+    <button type="button" class="menu-btn" onclick="openMenu();" >
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="fictitiousContent">
+        <div class="fictitiousContentGrid">
+            <div class="textContainer">
+                <h1>Welcome!</h1>
+
+                <p>
+                    Ops... We do not have any content for you yet :/  
+                </p>
+                <p>
+                    But we have this very cool drawer menu for you to play around! ;) 
+                </p>
+            </div>
+
+            <div class="imageContainer"> 
+                <img src="monkey.png">
+            </div>
+        </div>
+    </div>
+
+    <script src="sidemenu.js">
+        
+    </script>
+</body>
+</html>

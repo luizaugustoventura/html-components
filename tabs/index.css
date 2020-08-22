@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#welcome {
+    height: 100%;
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#welcome h1 {
+    color: #0095f2;
+    margin-bottom: 40px;
+}
+
+#welcome img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin: 30px 0;
+}
+
+#welcome p {
+    color: #CCC;
+    width: 70%;
+}
+
+.secondary {
+    background-color: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+}
+
+.secondary main {
+    max-width: 70%;
+}
+
+.secondary ul#options {
+    margin-top: 40px;
+    list-style: none;
+    display: flex;
+}
+
+.secondary ul#options li {
+    color: #333333;
+    width: 140px;
+    padding: 4px;
+    text-align: center;
+    border-radius: 6px;
+    transition: background-color 300ms;
+}
+
+.secondary ul#options li+li {
+    margin-left: 10px;
+}
+
+.secondary ul#options li a {
+    text-decoration: none;
+    color: unset;
+    width: 100%;
+}
+
+.secondary ul#options li.selected {
+    background-color: #0095f2;
+    color: #F5F5F5;
+}
+
+.secondary main div {
+    display: none;
+}
+
+.secondary main div.active {
+    display: flex;
+}
+
+.secondary main div.tab {
+    color: #333333;
+}

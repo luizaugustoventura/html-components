@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+.menu-btn {
+    border: 0;
+    outline: 0;
+    padding: 0;
+    background: none;
+    width: 30px;
+    height: 30px;
+    color: #915FC1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+    position: absolute;
+}
+
+#sidemenuContainer {
+    width: 0;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#sidemenu {
+    width: 0;
+    height: 100%;
+    background-color: #FFF;
+    transition: width 300ms;
+    box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.15);
+
+    padding-top: 50px;
+}
+
+#sidemenu ul {
+    overflow: hidden;
+    list-style: none;
+    
+    width: 100%;
+}
+
+#sidemenu ul a {
+    text-decoration: none;
+    white-space: nowrap;
+    display: flex;
+    height: 38px;
+}
+
+#sidemenu a:hover {
+    background-color: rgba(100, 100, 100, 0.3);
+}
+
+#sidemenu ul a li {
+    display: flex;
+    align-items: center;
+
+    color: #7129C1;
+    margin-left: 20px;
+    text-align: left;
+}
+
+#fakeContent {
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+}
+
+.fictitiousContent {
+    align-self: center;
+    margin: 0 auto;
+
+    height: 100%;
+    max-height: 400px;
+    width: 100%;
+    max-width: 700px;
+}
+
+.fictitiousContentGrid {
+    display: flex;
+    flex-direction: row;  
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.fictitiousContentGrid .textContainer h1 {
+    color: #7129C1;
+    margin-bottom: 30px; 
+    text-align: center; 
+}
+
+.fictitiousContentGrid .textContainer p {
+    font-size: 15px;
+    color: #505050;
+}
+
+.fictitiousContentGrid .textContainer p + p {
+    margin-top: 8px;
+}
+
+.fictitiousContentGrid .imageContainer {
+    height: 70%;
+}
+
+.fictitiousContentGrid .imageContainer img {
+    height: 100%;
+}
+
